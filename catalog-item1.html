@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>набор для путешествий «Baxter of California»</title>
+    <link href="css/item-style.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
-        <img src="#" alt="Барбершоп «Бородинский»">
+        <!-- Как сделать картинку ссылкой на гл.стр -->
+        <img src="img/small-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
         <ul>
           <li>
             <a href="#">Информация</a>
@@ -26,15 +28,36 @@
           </li>
         </ul>
       </nav>
-      <img src="#">
-      <a href="#">Вход</a>
+      <div class="login">
+        <img src="img/icon-login.png">
+        <a href="#">Вход</a>
+      </div>
     </header>
     <main>
+      <h1>набор для путешествий «Baxter of California»</h1>
+      <div class="breadcrumb">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Средства для ухода</a></li>
+          <li><a href="#">набор для путешествий «Baxter of California»</a></li>
+        </ul>
+      </div>
       <div class="galery">
-        <img src="#" class="item-lage" alt="набор для путешествий «Baxter of California» вид1">
-        <img src="#" class="item-small" alt="набор для путешествий «Baxter of California» вид3">
-        <img src="#" class="item-small" alt="набор для путешествий «Baxter of California» вид2">
-        <img src="#" class="item-small" alt="набор для путешествий «Baxter of California» вид1">
+        <div class="galery-item">
+          <div class="item-big">
+            <img src="img/big1-item1.jpg" width="486" height="524" alt="набор для путешествий «Baxter of California» вид1">
+          </div>
+          <div class="item-small">
+            <img src="img/small1-item1.jpg" width="166" height="175" alt="набор для путешествий «Baxter of California» вид3">
+          </div>
+          <div class="item-small">
+            <img src="img/small2-item1.jpg" width="166" height="175" alt="набор для путешествий «Baxter of California» вид2">
+          </div>
+          <div class="item-small">
+            <img src="img/small3-item1.jpg" width="166" height="175" alt="набор для путешествий «Baxter of California» вид1">
+          </div>
+        </div>
       </div>
       <div class="description">
 
@@ -47,7 +70,7 @@
         </section>
   <!-- Тут сомнения ??? -->
         <div>
-          <span class="price">2 900 РУБ.</span>
+          <span class="buy">2 900 РУБ.</span>
           <button type="submit" value="Купить">
         </div>
         <h2>В набор входят:</h2>
