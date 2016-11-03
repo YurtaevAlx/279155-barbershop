@@ -9,8 +9,7 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <!-- Как сделать картинку ссылкой на гл.стр -->
-          <img src="img/small-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
+          <a href="#"><img src="img/small-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
           <ul>
             <li>
               <a href="#">Информация</a>
@@ -37,46 +36,37 @@
     </header>
     <main>
       <h1>Средства для ухода</h1>
-        <div class="breadcrumb">
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Средства для ухода</a></li>
-          </ul>
+        <ul>
+          <li class="breadcrumb"><a href="#">Главная</a></li>
+          <li class="breadcrumb"><a href="#">Магазин</a></li>
+          <li class="breadcrumb"><a href="#">Средства для ухода</a></li>
+        </ul>
         </div>
         <div class="filter">
           <form action="#" method="get">
             <fieldset class="filter-producer">
-              <legend>Производители:</legend>
-              <ul>
-                <li><input type="checkbox" name="producer1" id="producer1-field" checked>
-                <label for="producer1-field">Baxter of California</label></li>
-                <li><input type="checkbox" name="producer2" id="producer2-field">
-                <label for="producer2-field">Mr Natty</label></li>
-                <li><input type="checkbox" name="producer3" id="producer3-field" checked>
-                <label for="producer3-field">Suavecito</label></li>
-                <li><input type="checkbox" name="producer4" id="producer4-field">
-                <label for="producer4-field">Malin+Goetz</label></li>
-                <li><input type="checkbox" name="producer5" id="producer5-field">
-                <label for="producer5-field">Murray’s</label></li>
-                <li><input type="checkbox" name="producer6" id="producer6-field" checked>
-                <label for="producer6-field">American Crew</label></li>
-              </ul>
+            <legend>Производители:</legend>
+              <div class="filter-field"><input type="checkbox" name="producer1" id="producer1-field" checked>
+              <label for="producer1-field">Baxter of California</label></div>
+              <div class="filter-field"><input type="checkbox" name="producer2" id="producer2-field">
+              <label for="producer2-field">Mr Natty</label></div>
+              <div class="filter-field"><input type="checkbox" name="producer3" id="producer3-field" checked>
+              <label for="producer3-field">Suavecito</label></div>
+              <div class="filter-field"><input type="checkbox" name="producer4" id="producer4-field">
+              <label for="producer4-field">Malin+Goetz</label></div>
+              <div class="filter-field"><input type="checkbox" name="producer5" id="producer5-field">
+              <label for="producer5-field">Murray’s</label></div>
+              <div class="filter-field"><input type="checkbox" name="producer6" id="producer6-field" checked>
+              <label for="producer6-field">American Crew</label></div>
             </fieldset>
             <fieldset class="filter-item">
-              <legend>ГРУППЫ ТОВАРОВ:</legend>
-              <label>
-                <input type="radio" name="filter-item" value="group1">
-                Бритвенные принадлежности
-              </label>
-              <label>
-                <input type="radio" name="filter-item" value="group2" checked>
-                Средства для ухода
-              </label>
-              <label>
-                <input type="radio" name="filter-item" value="group3">
-                Аксессуары
-              </label>
+            <legend>ГРУППЫ ТОВАРОВ:</legend>
+              <div class="filter-field"><input type="radio" name="filter-item" id="group1-field" value="group1">
+              <lable for="group1-field">Бритвенные принадлежности</label></div>
+              <div class="filter-field"><input type="radio" name="filter-item" id="group2-field" value="group2">
+              <lable for="group2-field">Средства для ухода</label></div>
+              <div class="filter-field"><input type="radio" name="filter-item" id="group3-field" value="group3">
+              <lable for="group3-field">Аксессуары</label></div>
             </fieldset>
             <input type="submit" value="Показать">
           </form>
